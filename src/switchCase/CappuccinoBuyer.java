@@ -3,6 +3,29 @@ package switchCase;
 public class CappuccinoBuyer {
     public static void main(String[] args) {
 
+        String size = "venti";
+        boolean big = size == "tall" ||size == "grande" ||size == "venti";
+        if (big){
+            switch (size){
+                case "tall" :
+                    System.out.println("price is $3.69");
+                    System.out.println("90 calories");
+                    break;
+                case "grande":
+                    System.out.println("price is $3.99");
+                    System.out.println("120 calories");
+                    break;
+                default:
+                    System.out.println("price is $4.29");
+                    System.out.println("150 calories");
+
+            }
+        }else{
+            System.out.println("Invalid Size");
+        }
+
+
+
     }
 
 }
