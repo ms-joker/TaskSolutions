@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class HowManyPeople {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("How many people do you live ?");
+        System.out.println("How many people do you live with?");
         int num = scan.nextInt();
         if (num > 0){
             if (num <3)
