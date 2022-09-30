@@ -9,8 +9,8 @@ public class SpeedLimit {
         int speed = scan.nextInt();
         int speedLimit = 55;
         int diff = speed - speedLimit;
-        if (speed > speedLimit){
-            System.out.println("You're driving "+diff+" mph over the limit. Slow down!");
+        if (speed > speedLimit) {
+            System.out.println("You're driving " + diff + " mph over the limit. Slow down!");
 
         }
 
