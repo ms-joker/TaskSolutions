@@ -1,17 +1,24 @@
 package switchCase;
 
+import java.util.Scanner;
+
 public class CappuccinoBuyer {
     public static void main(String[] args) {
 
-        String size = "venti";
-        boolean big = size == "tall" ||size == "grande" ||size == "venti";
-        if (big){
-            switch (size){
-                case "tall" :
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Can you give size(tall, grande, venti) : ");
+
+        int size = scan.nextInt();
+        boolean big = (size == 1 )|| (size == 2) || (size == 3);
+        if (big) {
+
+            switch (size) {
+                case 1:
                     System.out.println("price is $3.69");
                     System.out.println("90 calories");
                     break;
-                case "grande":
+                case 2:
                     System.out.println("price is $3.99");
                     System.out.println("120 calories");
                     break;
@@ -20,7 +27,40 @@ public class CappuccinoBuyer {
                     System.out.println("150 calories");
 
             }
-        }else{
+        } else {
+            System.out.println("Invalid Size");
+        }
+    }
+}
+
+
+
+
+
+
+
+/*
+
+        boolean big = size == "venti";
+        if (big){
+
+            switch (size) {
+                case "tall":
+                    System.out.println("price is $3.69");
+                    System.out.println("90 calories");
+                    break;
+                case "grande":
+                    System.out.println("price is $3.99");
+                    System.out.println("120 calories");
+                    break;
+
+                default:
+                    System.out.println("price is $4.29");
+                    System.out.println("150 calories");
+
+            }
+
+        }else {
             System.out.println("Invalid Size");
         }
 
@@ -29,6 +69,9 @@ public class CappuccinoBuyer {
     }
 
 }
+*/
+
+
 /*
 	1. Create a class called  CappuccinoBuyer. A variable named Size is given, write a program that can display the price and calories of cappuccino
 			Valid sizes are tall, grande, venti and their price & calories are:
@@ -53,3 +96,29 @@ public class CappuccinoBuyer {
 				Solution 2: use switch statement
 				Solution 2: use if & switch statements mixed
  */
+/*
+
+        boolean big = size == "tall" || size == "grande" || size == "venti";
+        if (big) {
+            switch (size) {
+                case "tall":
+                    System.out.println("price is $3.69");
+                    System.out.println("90 calories");
+                    break;
+                case "grande":
+                    System.out.println("price is $3.99");
+                    System.out.println("120 calories");
+                    break;
+                default:
+                    System.out.println("price is $4.29");
+                    System.out.println("150 calories");
+
+            }
+        } else {
+            System.out.println("Invalid Size");
+        }
+    }
+}
+
+
+*/
