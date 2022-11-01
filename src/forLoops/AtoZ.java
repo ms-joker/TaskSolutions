@@ -1,5 +1,7 @@
 package forLoops;
 
+import customMethods.Exercises;
+
 public class AtoZ {
     public static void main(String[] args) {
         for (char i = 65; i <= 90; i++){
@@ -17,5 +19,6 @@ public class AtoZ {
         for (char l = 122; l>=97; l--){
             System.out.print(l+" ");
         }
+        Exercises.helloCydeo();
     }
 }
