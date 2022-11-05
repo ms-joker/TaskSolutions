@@ -20,6 +20,13 @@ public class GradeTask {
 
     public static void main(String[] args) {
         gradesCalculater(92, 90, 100);
+        dolarToLira(45);
+    }
+
+    public static void dolarToLira(double dolar){
+        double lira = dolar * 18.60;
+        System.out.println(dolar + " is " + lira + " lira!");
+
     }
 
 }

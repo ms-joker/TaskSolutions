@@ -26,6 +26,15 @@ public class Students {
                 System.out.println();
             }
         }
+        System.out.println("----------------");
+        for (String[][] cydeoStudent : cydeoStudents) {
+            for (String[] strings : cydeoStudent) {
+                for (String string : strings) {
+                    System.out.print(string + "\t");
+                }
+                System.out.println();
+            }
+        }
 
     }
 }
