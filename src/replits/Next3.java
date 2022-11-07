@@ -7,4 +7,11 @@ public class Next3 {
             System.out.println(i);
         }
     }
+
+    public static void main(String[] args) {
+        sum(8,9,10);
+    }
+
+    private static void sum(int i, int i1, int i2) {
+    }
 }
